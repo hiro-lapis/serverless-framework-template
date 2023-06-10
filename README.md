@@ -7,7 +7,7 @@
 - build main.go with select path
 
 ```.shell
-GOOS=linux GOARCH=amd64 go build -o main main.go
+GOOS=linux GOARCH=amd64 go build -o ./bin/main main.go
 ```
 
 2. deploy

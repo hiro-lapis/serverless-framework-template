@@ -51,9 +51,16 @@ provider:
 #  include:
 #    - ./** # include all files in this directory
 
+package:
+  patterns:
+    # inclue
+    - bin/**
+    # exclude
+    # - '!tmp/**'
+
 functions:
   hello:
-    handler: main # reference to main.go
+    handler: bin/main # reference to main.go
 
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
