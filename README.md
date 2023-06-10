@@ -28,8 +28,9 @@ after deploy command, lambda name will be following.
 // => go-serverless-dev
 ```
 
-3. exec
+3. exec lambda API
 you can exec function, on AWS console, but also CLI.
+It'll create `out` file in current directory, that include api outputs.
 
 ```
 aws lambda invoke --function-name <function name>  out --log-type Tail
