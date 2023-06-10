@@ -4,4 +4,5 @@ bin
 # Serverless directories
 .serverless
 
-main
+bin/
+out
