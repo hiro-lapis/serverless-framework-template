@@ -8,6 +8,7 @@
 
 ```.shell
 GOOS=linux GOARCH=amd64 go build -o ./bin/main main.go
+GOOS=linux GOARCH=amd64 go build -o ./bin/graphql ./graphql/main.go
 ```
 
 2. deploy
@@ -41,6 +42,14 @@ aws lambda invoke --function-name <function name> --region ap-northeast-1 out --
 // ex
 aws lambda invoke --function-name go-serverless-dev-hello  out --log-type Tail
 ```
+
+## remove
+
+```
+serverless remove --region ap-northeast-1
+```
+
+
 # reference
 
 [official serverless framework](https://www.serverless.com/)
